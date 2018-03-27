@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock, Paper, Scissors</title>
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center">Rock-Paper-Scissors</h1>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4"></div>
+			<div class="col-lg-4">
+				<form>
+					<div class="form-group">
+                  		<input class="form-control" id="player-name-input" type="text" value="Enter Name">
+                  		<button class="btn btn-primary" id = "enter-player-button" type="submit">Enter</button>
+                  		<h3 id = "player-info"></h3>
+                  		<h3 id="status"></h3>
+					</div>
+				</form>
+
+			</div>
+			<div class="col-lg-4"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="box">
+					<h2 id = "player1-name">Waiting for Player 1</h2>
+					<h2 id = "choice1"></h2>
+					<h3 id = "rock1" hidden="true">Rock</h3>
+					<h3 id="paper1" hidden="true">Paper</h3>
+					<h3 id="scissors1" hidden="true">Scissors</h3>
+					<br>
+					<p id="wins-losses1"></p>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="box">
+					<h1 id="winner-name"></h1>
+					<h1 id="results" hidden="true">Wins</h1>
+				</div>
+		
+			</div>
+
+			<div class="col-lg-4">
+				<div class="box">
+					<h2 id = "player2-name">Waiting for Player 2</h2>
+					<h2 id = "choice2"></h2>
+					<h3 id = "rock2" hidden="true">Rock</h3>
+					<h3 id="paper2" hidden="true">Paper</h3>
+					<h3 id="scissors2" hidden="true">Scissors</h3>
+					<br>
+					<p id="wins-losses2"></p>
+				</div>
+			
+			</div>	
+			
+		</div>
+		
+	</div>
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Script -->
+	<script src="assets/javascript/logic.js"></script>
+	</body>
+</html>
